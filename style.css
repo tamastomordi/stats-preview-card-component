@@ -8,13 +8,80 @@
    --clr-neutral-75:  hsla(0, 0%, 100%, 0.75);
 
    --fs-base: 0.9375rem;
+   --fs-heading: 1.75rem;
 
-   --ff-base:: 'Lexend Deca', sans-serif;
-   --ff-heading: 'Inter', sans-serif;
+   --ff-base: 'Inter', sans-serif;
+}
+
+body {
+   font-family: var(--ff-base);
+   font-size: var(--fs-base);
+
+   background: var(--clr-primary-800);   
+   color: var(--clr-neutral-100);
+
+   padding: 1.5em;
+}
+
+h1 {
+   font-size: var(--fs-heading);
+   line-height: 1.2;
+}
+
+.highlight {
+   color: var(--clr-primary-400);
+}
+
+.card {
+   background: var(--clr-primary-600);
+   border-radius: 0.5em;
+   display: flex;
+   flex-flow: column;
+   margin: 0 auto;
+   max-width: 50ch;
+   min-width: min-content;
+}
+
+.image-holder {
+   border-radius: 0.5em 0.5em 0 0;
+   background: var(--clr-primary-400);
+}
+
+.card-image {
+   border-radius: 0.5em 0.5em 0 0;
+   mix-blend-mode: multiply;
+   width: 100%;
+}
+
+.card-body {
+   display: grid;
+   grid-auto-flow: row;
+   gap: 2em;
+
+   text-align: center;
+   padding: 2.5em 2em;
+}
+
+.card-body > p {
+   color: var(--clr-neutral-75);
+   line-height: 1.75;
+   margin-bottom: 1em;
+}
+
+.stat .label {
+   color: var(--clr-neutral-60);
+   text-transform: uppercase;
+   letter-spacing: 0.05em;
+}
+
+.stat .value {
+   font-size: var(--fs-heading);
+   font-weight: 700;
 }
 
 .attribution {
    font-size: 11px; text-align: center; 
+   margin-top: 5em;
 }
 
 .attribution a {
