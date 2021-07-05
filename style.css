@@ -93,10 +93,12 @@ h1 {
    }
    .image-holder {
       flex: 1 1 50%;
+      border-radius: 0 0.5em 0.5em 0;
    }
    .card-image {
       height: 100%;
       object-fit: cover;
+      border-radius: 0 0.5em 0.5em 0;
    }
    .card-body {
       flex: 1 1 50%;
